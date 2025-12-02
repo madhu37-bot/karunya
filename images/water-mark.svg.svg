@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="300"
+     viewBox="0 0 1200 300"
+     preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true">
+  <defs>
+    <!-- subtle drop shadow -->
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feOffset dx="0" dy="2" result="o"/>
+      <feMerge>
+        <feMergeNode in="o"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- background transparent: only text/logo -->
+  <g fill="none" stroke="none" font-family="Inter, Arial, Helvetica, sans-serif"
+     font-weight="600" text-anchor="middle" filter="url(#ds)">
+    <!-- Left emblem circle -->
+    <g transform="translate(120,150)">
+      <circle r="60" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2"/>
+      <text x="0" y="6" font-size="42" fill="#ffffff" fill-opacity="0.9">KG</text>
+    </g>
+
+    <!-- Main text lines -->
+    <g transform="translate(520,150)" fill="#ffffff" fill-opacity="0.9">
+      <text x="0" y="-8" font-size="36">Karunya Geriatric Care Centre</text>
+      <text x="0" y="34" font-size="20">Karingarappully, Palakkad, Kerala</text>
+    </g>
+
+    <!-- Make overall semi-transparent -->
+    <rect x="0" y="0" width="1200" height="300" fill="transparent" />
+  </g>
+</svg>
