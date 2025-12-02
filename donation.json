@@ -1,0 +1,53 @@
+{
+  "organization": {
+    "name_en": "Karunya Geriatric Care Centre",
+    "trust_name": "Palakkad Alzheimer’s Charitable Trust",
+    "address": "Near Govt Polytechnic College, Karingarappully PO, Palakkad - 678 551, Kerala, India",
+    "email": "karunyapact@gmail.com",
+    "phone": "+91 9447408252,8281986252,04918968252"
+  },
+  "compliance": {
+    "tax_benefit": "80G approved",
+    "pan": "AAAT-TT-4904E",
+    "registration_number": "CIT- TCR/TECH/80G-36/2009-10"
+  },
+  "bank_details": {
+    "bank_name": "Union Bank of India",
+    "branch": "UBI, CHANDRANAGAR",
+    "account_name": "THE PALAKKAD ALZHEIMERS CHARITABLE TRUST",
+    "account_number": "339602010008103",
+    "ifsc": "UBIN0533963",
+    "branch_address": "CHANDRANAGAR,PALAKKAD"
+  },
+  "upi": {
+    "upi_id": "qr919447408252-8103@unionbankofinida",
+    "qr_image": "images/qr-placeholder.jpg",
+    "note": "Scan the QR or copy the UPI ID to pay from your banking / UPI app."
+  },
+  "online_methods": [
+    {
+      "method": "Bank transfer (NEFT/RTGS/IMPS)",
+      "instructions": "Use the bank details above; for NEFT/RTGS include donor name and phone in transaction remarks."
+    },
+    {
+      "method": "UPI",
+      "instructions": "Scan QR or use UPI ID. For large transfers confirm with the office for acknowledgement."
+    },
+    {
+      "method": "Cheque / DD",
+      "instructions": "Payable to 'Palakkad Alzheimer’s Charitable Trust' and send to the postal address above with donor details."
+    }
+  ],
+  "donation_tiers": [
+    { "id": "tier-1", "title": "Supporter", "amount": 500, "description": "Covers day activities for one elder." },
+    { "id": "tier-2", "title": "Friend", "amount": 2000, "description": "Helps pay for medication for several residents." },
+    { "id": "tier-3", "title": "Partner", "amount": 10000, "description": "Supports medical camps and screening programs." },
+    { "id": "tier-4", "title": "Sponsor", "amount": 50000, "description": "Funds long-term care and infrastructure improvements." }
+  ],
+  "receipt": {
+    "auto_receipt_note": "Please provide donor name + email or mobile to receive an 80G receipt. Official receipts are issued after confirmation of payment.",
+    "processing_time": "Receipts are issued within 7 business days of payment confirmation."
+  },
+  "map_embed": "https://www.google.com/maps?q=Karunya+geriatric+care+centre+Karingarappully+Palakkad&output=embed",
+  "notes": "Replace placeholder QR and bank values with your real account/QR assets. Keep JSON and HTML in the same folder."
+}
