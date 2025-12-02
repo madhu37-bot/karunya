@@ -1,0 +1,73 @@
+{
+  "home": {
+    "hero": {
+      "h1_ml": "കാരുണ്യ വാർദ്ധക്യ ശുശ്രൂഷ കേന്ദ്രം",
+      "h1_en": "Karunya Geriatric Care Centre",
+      "subtitle_ml": "Palakkad Alzheimer’s Charitable Trust",
+      "subtitle_en": "Palakkad Alzheimer’s Charitable Trust",
+      "fallbackImage": "images/banner-small.jpg"
+    },
+    "dailyDelight": {
+      "kicker_ml": "Daily Delight",
+      "kicker_en": "Daily Delight",
+      "title_ml": "സ്നേഹവസന്തം",
+      "title_en": "Spring of Love — Moment of the Day",
+      "caption_ml": "“ഒരൊറ്റ പുഞ്ചിരികൊണ്ട് ഒരാൾക്ക് ലോകം കീഴടക്കാം\" - എം. ടി. വാസുദേവൻ നായർ. \"സ്നേഹം, അതൊക്കെ ഒരു വല്ലാത്ത സാധനമാണ്...\" - ബഷീർ. \"ഒരു കണ്ണീരിൻ തുള്ളിപോലും വീഴിക്കാതെ, ഒരുവേദനയും അറിയാതെ, ഒരു മനുഷ്യന് ജീവിക്കാൻ കഴിയണം.\" - അക്കിത്തം.",
+      "caption_en": "\"One can conquer the world with a single smile.\" - M.T. Vasudevan Nair. \"Love, that's a strange thing; we don't realize it. When we do, it has a beauty of its own.\" - Vaikom Muhammad Basheer. \"A person should be able to live without shedding even a single drop of tear, and without knowing any pain.\" - Akkitham Achuthan Namboothiri",
+      "image": "images/pic-of-the-day/onam1.jpg",
+      "link": "activity.html"
+    },
+    "projects": {
+      "therapy": { "title_ml": "Therapy & Wellness", "title_en": "Therapy & Wellness" },
+      "medical": { "title_ml": "Medical Sessions", "title_en": "Medical Sessions" },
+      "community": { "title_ml": "Community Outreach", "title_en": "Community Outreach" },
+      "festivals": { "title_ml": "Heritage & Festivals", "title_en": "Heritage & Festivals" }
+    },
+    "admissions": {
+      "steps": [
+        {
+          "step": 1,
+          "title_ml": "Eligibility",
+          "title_en": "Eligibility",
+          "body_ml": "കുടുംബ പിന്തുണയില്ലാത്ത മുതിർന്ന പൗരന്മാർക്കോ ദുർബലരും നിരാലംബരുമായവർക്കോ മുൻഗണന.",
+          "body_en": "Priority for destitute elders without family care. Others considered case-by-case."
+        },
+        {
+          "step": 2,
+          "title_ml": "Assessment",
+          "title_en": "Assessment",
+          "body_ml": "ആരോഗ്യ അവലോകനം, ആവശ്യകതകൾ കണ്ടെത്തൽ, വ്യക്തിഗത പരിചരണ പദ്ധതി.",
+          "body_en": "Health review, needs mapping, and an individualized care plan."
+        },
+        {
+          "step": 3,
+          "title_ml": "Onboarding",
+          "title_en": "Onboarding",
+          "body_ml": "രേഖപ്പെടുത്തൽ, വ്യക്തിപരമായ സാധനങ്ങൾ, സ്വാഗത നടപടിക്രമം, പരിചയപ്പെടുത്തൽ.",
+          "body_en": "Documentation, personal items, welcome routine, and orientation."
+        }
+      ]
+    },
+    "about_excerpt": {
+      "ml": "കാരുണ്യയിൽ, ഞങ്ങളുടെ പരിധിക്കുള്ളിൽ നിന്നുകൊണ്ട് സമഗ്രമായ വാത്സല്യ പരിചരണത്തിനാണ് ഞങ്ങൾ പ്രാധാന്യം നൽകുന്നത്. ...",
+      "en": "At Karunya, we focus primarily on comprehensive compassionate care within our scope. ..."
+    }
+  },
+  "medical": {
+    "title_ml": "കർണ്യ മെഡിക്കൽ സെന്റർ",
+    "title_en": "Karunya Medical Centre",
+    "excerpt_ml": "कारുണ്യ മെഡിക്കൽ സെന്റർ പാലിയേറ്റീവ് കെയർ (ശമന പരിചരണം) ചികിത്സ നൽകുന്നതിൽ特别 ശ്രദ്ധ ചെലുത്തുന്നു. 2024-06-01 ന് ആരംഭിച്ചു.",
+    "excerpt_en": "The Karunya Medical Centre specializes in providing palliative care treatment. Launched on 2024-06-01."
+  },
+  "footer": {
+    "org_name_ml": "കാരുണ്യ വാർദ്ധക്യ ശുശ്രൂഷ കേന്ദ്രം",
+    "org_name_en": "Karunya Geriatric Care Centre",
+    "contact": ["+91 491 2968252", "+91 9447408252", "karunyapact@gmail.com"],
+    "address": "Karingarapully, Palakkad 678 551",
+    "copyright": "© 2025 Palakkad Alzheimer’s Charitable Trust"
+  },
+  "eventsSummary": {
+    "source": "data/events.json",
+    "useFor": "canonical events; site-text contains titles/excerpts for search/indexing only"
+  }
+}

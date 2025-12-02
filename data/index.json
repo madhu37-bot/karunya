@@ -1,0 +1,108 @@
+
+{
+  "imagesBase": "images",
+  "imageExt": "jpg",
+  "siteTitle": "Karunya Geriatric Care Centre",
+  "lastUpdated": "2025-11-29T08:00:00+05:30",
+  "contact": {
+    "phonePrimary": "+91 491 2968252",
+    "phoneSecondary": "+91 9447408252",
+    "email": "karunyapact@gmail.com",
+    "address": "Karingarapully, Palakkad 678 551"
+  },
+  "dailyDelight": {
+    "id": "daily-delight-001",
+    "title": {
+      "ml": "സ്നേഹവസന്തം — Daily Delight",
+      "en": "Spring of Love — Daily Delight"
+    },
+    "date": "2025-11-29T08:00:00+05:30",
+    "image": {
+      "folder": "pic-of-the-day",
+      "file": "onam1"
+    },
+    "badge": "LATEST",
+    "caption": {
+      "ml": "ഒരൊറ്റ പുഞ്ചിരിയാൽ ലോകം കീഴടക്കാം. കാർണ്യയിലെ പതിവ് ദിനരശ്മികളിലെ ഒരു നിമിഷം.",
+      "en": "A single smile can conquer the world. A candid moment captured at Karunya."
+    },
+    "url": "activity.html"
+  },
+  "pages": {
+    "about": {
+      "title": {
+        "ml": "About Karunya",
+        "en": "About Karunya"
+      },
+      "excerpt": {
+        "ml": "കാർണ്യയിൽ, ഞങ്ങൾ സമഗ്രമായ സ്നേഹപരമായ പരിരക്ഷയ്ക്ക് പ്രാധാന്യം നൽകുന്നു. ആശുപത്രി സന്ദർശനങ്ങൾക്കും വിദഗ്ധ ചികിത്സയ്ക്കുമായി സഹായം നൽകുന്നു.",
+        "en": "At Karunya we prioritise compassionate, comprehensive care. We facilitate hospital visits and specialist treatment when needed."
+      },
+      "content": {
+        "ml": "കാർണ്യയിൽ, ഞങ്ങളുടെ പരിധിക്കുള്ളില്‍ നിന്നു സമഗ്രമായ വാത്സല്യപരമായ പരിചരണമാണ് ഞങ്ങൾ പ്രധാനം ചെയ്യുന്നത്. മുഴുവൻ സമയ മെഡിക്കൽ ചികിത്സ ഇവിടെ നല്കുന്നില്ലെങ്കിലും, ആശുപത്രിയിലേക്കുള്ള സന്ദർശനങ്ങള്‍ અને പുറത്തുള്ള ചികിത്സകള്‍ സംഘാടിപ്പെടുത്തിയാണ്‌ താമസക്കാരന് ആവശ്യമായ ചികിത്സ ഉറപ്പാക്കുന്നത്. 'വയോമിത്ര' പദ്ധതിയുടെ മാസാന്ത പരിശോധനകള്‍ ഞങ്ങൾക്ക് വലിയ സഹായമാണ്. ഏറ്റവും പ്രധാനം, ഓരോ താമസക്കാരന് ഒരു കൂട്ടുകാരനായി മാറാൻ ഞങ്ങൾ ശ്രമിക്കുന്നു — സംസാരിക്കാൻ ഒരാളെ, സ്നേഹത്തോടെ ഒരു സുഹൃത്ത് — അതിലൂടെ അവർക്കു മെച്ചപ്പെട്ട ജീവിതനിലവാരം ലഭിക്കുമെന്നും ഞങ്ങൾ പ്രതീക്ഷിക്കുന്നു.",
+        "en": "At Karunya we focus on comprehensive compassionate care within our means. While we do not provide full-time in-house medical treatment, we ensure residents receive necessary care by arranging hospital visits and specialist consultations. Monthly routine checks through the government's 'Vayo Mithra' scheme provide important clinical support. Above all, we strive to provide companionship and a better quality of life for each resident."
+      },
+      "url": "about.html"
+    },
+    "admissions": {
+      "title": {
+        "ml": "പ്രവേശന മാർഗ്ഗരേഖ",
+        "en": "Admission procedure"
+      },
+      "excerpt": {
+        "ml": "യോഗ്യത, മെഡിക്കൽ വിലയിരുത്തൽ, ഒന്‍ബോര്‍ഡിംഗ് — സുതാര്യവും മനുഷ്യകേന്ദ്രവുമായ നടപടിക്രമം.",
+        "en": "Eligibility, medical assessment, and onboarding — clear, humane steps."
+      },
+      "content": {
+        "ml": "പ്രവേശന വീഥി — (1) യോഗ്യത: കുടുംബ പിന്തുണയില്ലാത്ത അല്ലെങ്കിൽ തുടര്‍ച്ചയായ പരിചരണത്തിന് അടക്കം പ്രശ്നങ്ങള്‍ ഉള്ള മുതിര്‍ന്നവരോട് മുൻഗണന.Others considered case-by-case. (2) വിലയിരുത്തല്‍: ആരോഗ്യ അവലോകനം, ആവശ്യകതകളുടെ മാപ്പിംഗ്, വ്യക്തിഗത പരിചരണപദ്ധതി തയ്യാറാക്കല്‍. (3) ഓൺബോർഡിംഗ്: രേഖകള്‍, വ്യക്തിഗത സാധനങ്ങളുടെ പട്ടിക, സ്വാഗത നടപടിക്രമം, പരിചയപ്പെടുത്തൽ. ആവശ്യാനുസരണം മറ്റ് സേവനങ്ങൾ (ഡോക്ടർ പ്രവേശനങ്ങൾ, ആശുപത്രി പദ്ധതികൾ) ക്രമീകരിക്കും.",
+        "en": "Admission guidelines — (1) Eligibility: priority to destitute elders or those lacking family care; others considered case-by-case. (2) Assessment: health review, needs mapping and a personalised care plan. (3) Onboarding: documentation, inventory of personal items, welcome routine and orientation. Additional services such as hospital visits or specialist referrals are arranged as needed."
+      },
+      "url": "admissions.html"
+    },
+    "donation": {
+      "title": {
+        "ml": "സംഭാവനകൾ",
+        "en": "Donate"
+      },
+      "excerpt": {
+        "ml": "ഭക്ഷണം, വസ്ത്രം, മരുന്നുകൾ, സാമ്പത്തിക സഹായം — എന്റെ കൈ പറഞ്ഞു.",
+        "en": "Food, clothing, medicines, or financial support — ways to help."
+      },
+      "content": {
+        "ml": "കാർണ്യയുടെ സേവനങ്ങൾ ഭക്ഷണം, വസ്ത്രം, മരുന്നുകൾ എന്നിവയുടെ സഹായം വഴി നിലനിൽക്കുന്നു. വ്യക്തിഗത സമ്മാനങ്ങൾ, പ്രത്യേക ചടങ്ങുകളിൽ പങ്കാളിത്തം, പുതിയ പദ്ധതികൾക്ക് സ്ഥിരമായ സംഭാവനകൾ — എല്ലാം വിലമതിക്കുന്നതാണ്. സാധന സംഭാവനകൾക്ക് മുന്‍പായി ദയവായി ദാനം വിഭാഗവുമായി ബന്ധപ്പെടുക; വലിയ ധനസമർപ്പണങ്ങൾ അല്ലെങ്കിൽ സാധനങ്ങളുടെ നിരന്തരം നൽകൽ സംബന്ധിച്ച വിശദതകള്‍ക്ക് വ്യക്തമായ നടപടിക്രമങ്ങൾ നമുക്കുണ്ട്.",
+        "en": "Karunya's services are sustained by donations of food, clothing and medicines as well as financial support. One-off gifts, celebration-sharing and regular sponsorships are all valuable. Please contact the donations team before donating physical items; there are procedures for large or recurring contributions and for volunteer involvement."
+      },
+      "url": "donation.html"
+    },
+    "medical": {
+      "title": {
+        "ml": "കാർണ്യ മെഡിക്കൽ സെന്റർ",
+        "en": "Karunya Medical Centre"
+      },
+      "excerpt": {
+        "ml": "പാലിയേറ്റീവ് കെയർ, ഡോക്ടർ പരിശോധനകൾ, പ്രത്യേക സേവനങ്ങൾ (ആരംഭം: 2024-06-01).",
+        "en": "Palliative care, doctor consultations and clinical services (launched 2024-06-01)."
+      },
+      "content": {
+        "ml": "കാർണ്യ മെഡിക്കൽ സെന്റർ പ്രത്യേകിച്ച് പാലിയേറ്റീവ് കെയറിന് സമർപ്പിച്ച ഒരു സേവന ഘടകം ആണ്. 2024 ജൂൺ 1-ന് ആരംഭിച്ച ഈ പദ്ധതിയിൽ ഓരോ രോഗിയുടെ പ്രത്യേക ആവശ്യകതകൾക്ക് അനുസൃതമായ ഡോക്ടർ പരിശോധനകളും ചികിത്സ സൗകര്യങ്ങളും ഉറപ്പാക്കുന്നു. താമസക്കാരുടെ ആരോഗ്യപരിശോധനകൾ, മെഡിക്കൽ റഫറലുകൾ, ഫലപ്രദമായ പേറിയഡിക് ടെസ്റ്റിംഗുകൾ എന്നിവയുടെ ക്രമീകരണം സംഘടിപ്പിക്കുന്നു. ഈ സെന്റർ പങ്കാളിത്തം പല സാഹചര്യങ്ങളിലും վճെല്ലപ്പെട്ട സേവനമായിരിക്കും; ബന്ധപ്പെടാൻ ഉപരിപഠന താൾ കാണുക.",
+        "en": "The Karunya Medical Centre is dedicated to palliative care services. Launched on June 1, 2024, it provides tailored doctor consultations, referrals and structured clinical follow-ups depending on each resident's needs. Routine check-ups and specialist visits are coordinated and organised through this centre. For service details and bookings, refer to the medical page."
+      },
+      "launchedOn": "2024-06-01",
+      "url": "medical.html"
+    }
+  },
+  "siteSettings": {
+    "hero": {
+      "fixedSlides": [
+        "images/hero-fixed-1.jpg",
+        "images/hero-fixed-2.jpg",
+        "images/hero-fixed-3.jpg"
+      ],
+      "defaultSlide": "images/banner-small.jpg"
+    },
+    "ui": {
+      "showSplash": true,
+      "celebrationImage": "images/banner.jpg"
+    }
+  }
+}

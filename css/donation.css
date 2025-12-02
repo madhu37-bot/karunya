@@ -1,0 +1,530 @@
+/* /css/donation.css */
+:root{
+  --teal:#00A896;
+  --navy:#192A56;
+  --paper:#FCF6F0;
+  --ink:#263238;
+  --muted:#6B7280;
+  --accent:#FF6B6B;
+  --accent-2:#FFD166;
+  --card-radius:14px;
+  --ring:rgba(25,42,86,.08);
+  --max-width:1100px;
+  --container-pad:18px;
+}
+
+/* Reset & typography */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+.ml{font-family:Manjari, sans-serif;}
+
+/* Layout */
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 var(--container-pad);
+}
+
+/* ---------------------------------------------------
+   HEADER (Unified reference header with proper desktop spacing)
+--------------------------------------------------- */
+
+.site-header{
+  background:var(--navy);
+  color:#fff;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+/* Same navy everywhere */
+header, .topbar, .site-header{
+  background:var(--navy);
+}
+
+/* Desktop spacing fixed */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+  gap:18px;
+  flex-wrap:nowrap;
+}
+
+/* Keep brand compact */
+.topbar .brand{flex:0 0 auto; min-width:0}
+
+/* Push nav to the right */
+.topbar .nav{
+  margin-left:auto;
+  display:flex;
+  gap:14px;
+  align-items:center;
+  flex-wrap:nowrap;
+}
+
+/* Ensure brand inner text doesn't overflow */
+.topbar .brand > div{
+  min-width:0;
+  max-width:calc(100vw - 180px); /* leave space for nav on small screens */
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+/* Mobile header: stack brand and nav to avoid overflow
+   - Brand stays on first row, nav moves below and spans full width.
+   - Nav pills shrink and wrap as needed.
+*/
+@media(max-width:720px){
+  .topbar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+    padding:10px 0;
+    align-items:stretch;
+  }
+
+  .topbar .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    padding-right:12px;
+  }
+
+  /* Brand text truncation for small widths */
+  .topbar .brand > div{
+    max-width:calc(100% - 64px);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  /* Make nav full width, allow wrapping; align to right visually */
+  .topbar .nav{
+    margin-left:0;
+    gap:8px;
+    flex-wrap:wrap;
+    display:flex;
+    width:100%;
+    justify-content:flex-end;
+    padding:6px 0 0 0;
+  }
+
+  /* Smaller nav pills on mobile */
+  .nav-link{
+    padding:8px 10px;
+    font-size:14px;
+    border-radius:10px;
+  }
+
+  /* If many nav items, let them wrap to next line and keep spacing */
+  .topbar .nav .nav-link{
+    flex:0 0 auto;
+    margin-bottom:6px;
+  }
+}
+
+/* Logo */
+.site-logo{
+  width:56px;
+  height:56px;
+  object-fit:contain;
+  display:block;
+  flex-shrink:0;
+  border-radius:10px;
+}
+@media(max-width:720px){
+  .site-logo{width:44px;height:44px}
+}
+
+/* Brand text */
+.brand{
+  font-family:Manjari, sans-serif;
+  font-weight:700;
+  font-size:18px;
+  color:#fff;
+}
+
+/* Nav links */
+.nav-link{
+  color:#cfeff0;
+  padding:10px 14px;
+  border-radius:8px;
+  font-weight:600;
+  text-decoration:none;
+  display:inline-flex;
+  gap:6px;
+  align-items:center;
+}
+.nav-link:hover{
+  background:rgba(255,255,255,0.06);
+}
+.nav-link.active{
+  background:rgba(0,168,150,.12);
+  border:1px solid rgba(0,168,150,.12);
+  color:#fff;
+}
+
+/* Donate pill */
+.nav-link.btn-donate,
+.nav .btn-donate{
+  background:linear-gradient(180deg,var(--teal), #007a68);
+  color:#fff;
+  border-radius:999px;
+  padding:8px 14px;
+  font-weight:700;
+}
+
+/* ---------------------------------------------------
+   HERO
+--------------------------------------------------- */
+
+.donate-hero-wrap{
+  position:relative;
+  width:100%;
+  height:320px;
+  border-radius:16px;
+  overflow:hidden;
+  background:#e8eef2;
+  margin:22px 0;
+  display:flex;
+  align-items:flex-end;
+}
+@media(max-width:720px){
+  .donate-hero-wrap{height:200px}
+}
+
+.dslides{position:absolute;inset:0}
+.dslide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:opacity .8s ease;
+}
+.dslide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.dslide.show{opacity:1}
+
+.hero-caption{
+  position:relative;
+  z-index:3;
+  margin:20px;
+  padding:14px;
+  border-radius:12px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.88),rgba(255,255,255,0.96));
+  max-width:520px;
+}
+.hero-caption h1{
+  margin:0;
+  font-size:20px;
+}
+.hero-caption .lead{
+  margin:6px 0 0;
+  color:var(--muted);
+}
+
+/* ---------------------------------------------------
+   CARDS
+--------------------------------------------------- */
+
+.card{
+  background:#fff;
+  border-radius:var(--card-radius);
+  padding:18px;
+  border:1px solid var(--ring);
+  box-shadow:0 10px 30px rgba(0,0,0,.04);
+  margin-bottom:24px;
+}
+
+.section-title{
+  font-size:20px;
+  margin:0 0 10px 0;
+  font-family:Manjari, sans-serif;
+}
+.sub-title{
+  font-size:18px;
+  margin-top:18px;
+  margin-bottom:8px;
+}
+
+/* ---------------------------------------------------
+   DONATION OPTIONS
+--------------------------------------------------- */
+
+.opts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:14px;
+  margin-top:8px;
+}
+
+.opt{
+  display:flex;
+  gap:12px;
+  padding:14px;
+  border-radius:12px;
+  border:1px dashed var(--ring);
+  align-items:flex-start;
+  background:linear-gradient(#fff,#fbfbff);
+  min-height:110px;
+}
+
+.opt-art{
+  flex:0 0 84px;
+}
+.opt-art img{
+  width:84px;
+  height:84px;
+  object-fit:cover;
+  border-radius:12px;
+  border:1px solid var(--ring);
+}
+
+.opt-body{
+  flex:1;
+  min-width:0;
+}
+
+.title{
+  font-weight:700;
+  color:var(--navy);
+  margin:0;
+  display:block;
+  font-family:Manjari, sans-serif;
+}
+
+.title .en, .title .ml{
+  display:block;
+  white-space:normal;
+  word-break:break-word;
+  line-height:1.2;
+}
+
+.meta{
+  color:var(--muted);
+  margin-top:8px;
+  font-size:14px;
+  line-height:1.4;
+  white-space:normal;
+  word-break:break-word;
+}
+
+.opt.highlight{
+  background:linear-gradient(#fff,#fbfbfb);
+  border:1px dashed var(--ring);
+}
+
+/* ---------------------------------------------------
+   OTHER CONTRIBUTIONS
+--------------------------------------------------- */
+
+.other-contrib{
+  padding:18px 0;
+  text-align:center;
+  margin:10px 0;
+}
+.other-contrib .other-text{
+  margin:0 auto;
+  max-width:900px;
+  padding:22px 26px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#ffffff 0%, #f6f1ff 50%, #fff7e8 100%);
+  font-size:17px;
+  font-weight:700;
+  color:var(--ink);
+  box-shadow:0 4px 18px rgba(0,0,0,.06);
+}
+.other-contrib .ml{font-family:Manjari, sans-serif}
+
+/* ---------------------------------------------------
+   BANK + QR
+--------------------------------------------------- */
+
+.bank-qr .bank-qr-inner{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.bank-qr .bank{
+  flex:1;
+  min-width:280px;
+}
+
+.bank-qr .qr-block{
+  width:260px;
+  flex-shrink:0;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  align-items:center;
+}
+
+.qr{
+  width:100%;
+  max-width:220px;
+  border-radius:12px;
+  border:1px solid var(--ring);
+  background:#eee;
+}
+
+.bank-details{
+  margin:12px 0;
+}
+.bank-details dt{
+  font-weight:700;
+  margin-top:10px;
+}
+.bank-details dd{
+  margin:3px 0 8px;
+  color:#111;
+}
+
+.contact-line{margin-top:6px;font-size:14px}
+.note{font-size:14px;color:var(--muted);margin-top:12px}
+
+.map-wrap{
+  border-radius:14px;
+  overflow:hidden;
+  margin-top:12px;
+  border:1px solid var(--ring);
+}
+
+/* ---------------------------------------------------
+   FOOTER (Matches reference + fixes blue/pink links)
+   Visual + responsive tweaks for mobile to match screenshots
+--------------------------------------------------- */
+
+/* Visual style for footer container */
+.site-footer{
+  margin-top:40px;
+  /* deeper, slightly glossy navy for the boxed footer look */
+  background:linear-gradient(180deg,#122744,#183151);
+  color:#e8f2ff;
+  padding:22px 0;
+  border-radius:12px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.45);
+  position:relative;
+}
+
+/* inner layout */
+.footer-inner{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 var(--container-pad);
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.footer-column{
+  min-width:0;
+  flex:1 1 0%;
+  padding:6px 10px;
+}
+
+.brand-small{font-weight:700;margin-bottom:6px}
+.address{color:#e8f2ff;font-size:14px;line-height:1.4}
+
+.footer-center .footer-links{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.footer-link{
+  color:#e8f2ff !important;
+  background:rgba(255,255,255,0.03) !important;
+  padding:8px 10px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.05);
+  font-size:14px;
+  text-decoration:none;
+}
+
+.footer-link:hover{
+  background:rgba(255,255,255,0.07) !important;
+}
+
+.footer-right .contact{
+  line-height:1.45;
+  font-size:14px;
+}
+
+.footer-email{color:#e8f2ff}
+
+/* Mobile footer adjustments: stack and tighten spacing to match screenshot */
+@media(max-width:720px){
+  .site-footer{
+    margin:16px 0;
+    padding:14px 0;
+  }
+
+  .footer-inner{
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:left;
+    gap:12px;
+    padding:0 var(--container-pad);
+  }
+
+  .footer-column{
+    width:100%;
+    padding:6px 8px;
+    display:block;
+  }
+
+  .brand-small{font-size:15px}
+  .address{font-size:13px}
+
+  .footer-center .footer-links{
+    margin-top:8px;
+    gap:8px;
+  }
+
+  .footer-link{
+    padding:6px 8px;
+    font-size:13px;
+    margin-bottom:6px;
+    display:inline-block;
+  }
+
+  .footer-right .contact{
+    font-size:13px;
+  }
+
+  /* small decorative corner (if present in markup) should stay visible but reduced */
+  .footer-note{height:6px}
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE TWEAKS
+--------------------------------------------------- */
+
+@media(max-width:900px){
+  .bank-qr .bank-qr-inner{flex-direction:column}
+  .qr-block{width:100%;align-items:flex-start}
+  .opt-art img{width:64px;height:64px}
+  .hero-caption{margin:12px;padding:12px;max-width:100%}
+}
+
+/* Focus states */
+button:focus, a:focus{
+  outline:3px solid rgba(0,168,150,.14);
+  outline-offset:3px;
+}
