@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZDV35EMMP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TZDV35EMMP');
+</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="images/fevicon-logo/Logo-Karunya.png" type="image/png" />
+  <title>Karunya Geriatric Care Centre — Palakkad Alzheimer’s Charitable Trust</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Manjari:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- main stylesheet (replace with your merged styles.css) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-celebration="on">
+
+  <!-- ===========================
+       SPLASH / PRELOADER (keeps user from seeing white page)
+       ===========================
+       Your existing splash is preserved. The inline script near the end
+       makes sure the celebration modal has a background image so you
+       don't get a white full-screen modal when the page first loads.
+  -->
+  <div id="splash" role="status" aria-live="polite">
+    <div class="splash-card" role="note" aria-label="Loading Karunya">
+      <div class="splash-logo" aria-hidden="true">ക</div>
+      <div>
+        <div class="splash-text">Karunya — Loading</div>
+        <div class="splash-row" style="margin-top:8px;align-items:center">
+          <div class="water-wrap" aria-hidden="true">
+            <span id="water-fill" class="water-fill" style="width:0%"></span>
+          </div>
+          <div id="water-percent" class="water-percent">0%</div>
+        </div>
+        <div class="splash-sub">Please wait — preparing images and assets</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================
+       HEADER
+       (unchanged)
+       =========================== -->
+  <header>
+    <div class="container header-bar" role="banner">
+      <div class="brand" aria-hidden="false">
+        <div class="brand-left" style="display:flex;align-items:center;gap:12px;">
+          <img
+            src="images/fevicon-logo/Logo-Karunya.png"
+            alt="Karunya logo"
+            class="brand-logo"
+            width="56"
+            height="56"
+            loading="lazy"
+            style="border-radius:10px;flex:0 0 56px;object-fit:contain;"
+          />
+          <div class="brand-text">
+            <p class="title ml" style="margin:0">കാരുണ്യ വാർദ്ധക്യ ശുശ്രൂഷ കേന്ദ്രം</p>
+            <div class="subtitle">Palakkad Alzheimer’s Charitable Trust</div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a id="nav-home" href="index.html" aria-current="page">Home</a>
+        <a id="nav-activities" href="activity.html">Activities</a>
+        <a id="nav-about" href="about.html">About</a>
+        <a id="nav-donate" href="donation.html" class="btn-donate btn-donate">Support Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===========================
+       TOP HERO
+       =========================== -->
+  <section class="top-hero" aria-hidden="false" aria-label="Top hero">
+    <div id="top-hero-media" class="hero-media card" aria-hidden="false">
+      <div class="slide play" style="animation-delay:0s">
+        <img src="images/banner-small.jpg" alt="Life at Karunya" loading="lazy" decoding="async" width="1600" height="700">
+      </div>
+    </div>
+
+    <div class="overlay" aria-hidden="false">
+      <div class="boxed">
+        <h1 class="ml">കാരുണ്യ വാർദ്ധക്യ ശുശ്രൂഷ കേന്ദ്രം</h1>
+        <p>Karunya Geriatric Care Centre — Palakkad Alzheimer’s Charitable Trust</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       DAILY DELIGHT
+       (unchanged)
+       =========================== -->
+  <section id="daily-delight" class="daily-delight" aria-labelledby="daily-delight-heading">
+    <div class="daily-text">
+      <div class="kicker">Daily Delight</div>
+      <h2 id="daily-delight-heading" class="title ml">സ്നേഹവസന്തം</h2>
+      <p class="en subtitle">Spring of Love — Moment of the Day</p>
+
+      <div id="sneh-bilingual" class="bilingual" aria-live="polite">
+        <p id="sneh-caption-ml" class="ml" lang="ml"></p>
+        <p id="sneh-caption" class="en lead" lang="en"></p>
+      </div>
+
+      <p style="margin-top:12px;color:var(--muted);font-weight:600">
+        <span id="sneh-date" class="cap"></span>
+      </p>
+
+      <div style="margin-top:14px">
+        <a id="sneh-link" class="btn btn-teal" href="activity.html" aria-label="View related activities">View activity archive →</a>
+      </div>
+    </div>
+
+    <div class="daily-image card" aria-hidden="false">
+      <div style="position:relative;">
+        <img id="sneh-img" src="images/pic-of-the-day/onam1.jpg" alt="Daily Delight — candid" loading="lazy" width="1200" height="800">
+        <div id="sneh-badge" class="badge-latest">LATEST</div>
+      </div>
+      <div class="daily-caption" id="sneh-title" style="padding:10px 6px">
+        <div class="ml" lang="ml">Candid moment from Karunya</div>
+        <div class="en" lang="en">Candid moment from Karunya</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       ACTIVITIES / PROJECTS / ADMISSIONS / ABOUT / MEDICAL / DONATE / FOOTER
+       (unchanged — keep your existing markup below; truncated here for brevity)
+       =========================== -->
+  <!-- Activities -->
+  <section id="activities" class="section" aria-labelledby="activities-heading">
+    <div class="container">
+      <div class="grid grid-12 activities-header" style="align-items:end">
+        <div class="left">
+          <h2 id="activities-heading" class="h2 ml" style="color:var(--navy)">പുതിയ പ്രവർത്തനങ്ങൾ</h2>
+          <p class="lead">A short window into recent days at Karunya.</p>
+        </div>
+        <div class="right">
+          <a href="activity.html" class="btn btn-teal nowrap">View all activities →</a>
+        </div>
+      </div>
+
+      <div id="act-grid" class="grid grid-12" style="margin-top:18px">
+        <!-- activity cards populated by app.updated.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects (kept) -->
+  <section id="projects" class="section" style="background:#fff" aria-labelledby="projects-heading">
+    <div class="container">
+      <h2 id="projects-heading" class="h2 ml" style="color:var(--navy);text-align:center">Karunya Projects</h2>
+      <p class="lead" style="text-align:center">Four streams, each pulling live examples from the archive.</p>
+      <div class="space-sm"></div>
+
+      <div class="projects-grid">
+        <article class="card pad">
+          <h3 class="h3" style="color:var(--navy)">Therapy & Wellness</h3>
+          <p class="cap">Yoga, music, movement</p>
+          <div class="space-xs"></div>
+          <img id="p-therapy-img" class="thumb" src="https://placehold.co/600x360" alt="Therapy" loading="lazy" decoding="async">
+          <ul id="p-therapy-list" class="cap" style="margin:10px 0 0 0;padding-left:18px"></ul>
+          <div class="space-xs"></div>
+          <a href="activity.html" class="btn btn-navy" style="width:100%">See more</a>
+        </article>
+
+        <article class="card pad">
+          <h3 class="h3" style="color:var(--navy)">Medical Sessions</h3>
+          <p class="cap">Screenings, checkups, awareness</p>
+          <div class="space-xs"></div>
+          <img id="p-med-img" class="thumb" src="https://placehold.co/600x360" alt="Medical" loading="lazy" decoding="async">
+          <ul id="p-med-list" class="cap" style="margin:10px 0 0 0;padding-left:18px"></ul>
+          <div class="space-xs"></div>
+          <a href="activity.html" class="btn btn-navy" style="width:100%">See more</a>
+        </article>
+
+        <article class="card pad">
+          <h3 class="h3" style="color:var(--navy)">Community Outreach</h3>
+          <p class="cap">Student and volunteer visits</p>
+          <div class="space-xs"></div>
+          <img id="p-comm-img" class="thumb" src="https://placehold.co/600x360" alt="Community" loading="lazy" decoding="async">
+          <ul id="p-comm-list" class="cap" style="margin:10px 0 0 0;padding-left:18px"></ul>
+          <div class="space-xs"></div>
+          <a href="activity.html" class="btn btn-navy" style="width:100%">See more</a>
+        </article>
+
+        <article class="card pad">
+          <h3 class="h3" style="color:var(--navy)">Heritage & Festivals</h3>
+          <p class="cap">Culture and national days</p>
+          <div class="space-xs"></div>
+          <img id="p-fest-img" class="thumb" src="https://placehold.co/600x360" alt="Festivals" loading="lazy" decoding="async">
+          <ul id="p-fest-list" class="cap" style="margin:10px 0 0 0;padding-left:18px"></ul>
+          <div class="space-xs"></div>
+          <a href="activity.html" class="btn btn-navy" style="width:100%">See more</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions / About / Medical / Donate / Footer (preserve your existing markup) -->
+  <!-- ... (omitted for brevity) ... -->
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-left">
+          <div class="ml" style="font-size:20px;color:#9fe7db">കാരുണ്യ വാർദ്ധക്യ ശുശ്രൂഷ കേന്ദ്രം</div>
+          <div class="cap">Karunya Geriatric Care Centre</div>
+        </div>
+
+        <div class="footer-links">
+          <div class="cap">Quick links</div>
+          <div class="space-xs"></div>
+          <a href="activity.html">Activities</a><br/>
+          <a href="activity.html">Projects</a><br/>
+          <a href="donation.html">Support us</a>
+        </div>
+
+        <div class="footer-contact">
+          <div class="cap">Contact</div>
+          <div class="space-xs"></div>
+          <div class="cap">+91 491 2968252</div>
+          <div class="cap">+91 9447408252</div>
+          <div class="cap">karunyapact@gmail.com</div>
+          <div class="cap">Karingarapully, Palakkad 678 551</div>
+        </div>
+      </div>
+
+      <div class="space-sm"></div>
+      <div class="cap" style="text-align:center">© 2025 Palakkad Alzheimer’s Charitable Trust</div>
+    </div>
+  </footer>
+
+  <!-- ===========================
+       CELEBRATION WIDGET (complete block)
+       - Change only the data-* attributes below to control behavior:
+         1) data-target         -> target ISO datetime (when the 'after' state begins)
+         2) data-before-*       -> texts shown before target (badge/title/sub)
+         3) data-after-*        -> texts shown after target (badge/title/sub/background)
+         4) example for Dec 25  -> data-target="2025-12-25T00:00:00"
+       =========================== -->
+
+  <!-- Floating countdown badge (visible by default; styled in styles.css) -->
+  <button id="cw-countdown-badge"
+          type="button"
+          aria-label="Open celebration"
+          class="cw-badge-auto"
+          aria-haspopup="dialog">
+    <span class="label">Countdown</span>
+    <span class="value" aria-hidden="true"></span>
+  </button>
+
+ <div id="celebration-widget-root" class="cw-root" aria-hidden="true"
+    data-target="2025-12-31T00:00:00"
+    data-before-badge="Countdown"
+    data-before-title="Karunya welcomes the New Year"
+    data-before-sub="Counting down…"
+    data-after-badge="Happy Holidays"
+    data-after-title="Happy New Year"
+    data-after-sub="Warm wishes from everyone at Karunya"
+    data-after-bg="images/banner.jpg"
+    data-auto-open-minutes="0"
+    data-show-modal-before="true"
+>
+    <div class="cw-modal" role="dialog" aria-modal="true" aria-labelledby="cw-title">
+      <div class="cw-backdrop" tabindex="-1"></div>
+
+      <div class="cw-card" role="document" aria-live="polite">
+        <div class="cw-bg" id="cw-bg" aria-hidden="true"></div>
+
+        <button id="cw-close" class="cw-close" aria-label="Close popup" title="Close popup">✕</button>
+
+        <div class="cw-content" role="document">
+          <div class="cw-badge" id="cw-badge">Happy Holidays</div>
+          <h2 id="cw-title" class="cw-title">Karunya welcomes the New Year</h2>
+          <p id="cw-sub" class="cw-sub">Warm wishes from everyone at Karunya</p>
+
+          <div class="cw-big" aria-live="polite" aria-atomic="true">
+            <div id="cw-big-val" class="cw-big-val">00 : 00 : 00 : 00</div>
+            <div class="cw-meta" id="cw-meta">DD : HH : MM : SS</div>
+          </div>
+
+          <div style="font-size:13px;color:rgba(255,255,255,0.92)">Close to continue browsing.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================
+       Small inline helper: ensure cw-bg has a default image immediately
+       (prevents white modal background briefly on reload). This runs before
+       celebration.js (which will update cw-bg later based on data attributes).
+       =========================== -->
+  <script>
+    (function () {
+      try {
+        var root = document.getElementById('celebration-widget-root');
+        if (!root) return;
+        var bg = document.getElementById('cw-bg');
+        var defaultImage = root.dataset.afterBg || root.getAttribute('data-after-bg') || 'images/banner.jpg';
+        if (bg && defaultImage) {
+          bg.style.backgroundImage = "url('" + defaultImage + "')";
+          bg.style.backgroundSize = 'cover';
+          bg.style.backgroundPosition = 'center';
+        }
+        // Make sure badge is visible (remove hidden class) early
+        var badge = document.getElementById('cw-countdown-badge');
+        if (badge) badge.classList.remove('hidden');
+      } catch (e) { console.warn('widget init helper failed', e); }
+    })();
+  </script>
+
+  <!-- Your main app + celebration script (deferred) -->
+  <script src="app.js" defer></script>
+  <script src="celebration.js" defer></script>
+
+</body>
+</html>

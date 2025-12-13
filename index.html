@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZDV35EMMP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TZDV35EMMP');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karunya Geriatric Care Centre</title>
+
+
+    <!-- Favicon (updated path) -->
+    <link rel="icon" type="image/png" href="images/fevicon-logo/Logo-Karunya.png" />
+    <link rel="shortcut icon" type="image/png" href="images/fevicon-logo/Logo-Karunya.png" />
+
+    <!-- Google Fonts: Manrope (English) and Noto Sans Malayalam -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Noto+Sans+Malayalam:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- PRELOADER (three dots) -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-dots">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="navbar" class="navbar">
+        <div class="container navbar-inner">
+            <a href="#home" class="brand" aria-label="Karunya Home">
+                <!-- Logo before Karunya text -->
+                <img src="images/fevicon-logo/Logo-Karunya.png" alt="Karunya logo" class="brand-logo">
+                <span data-key="brand_name">Karunya Geriatric Care Centre</span>
+            </a>
+
+            <div class="nav-links" id="desktop-links">
+                <a href="#home" data-key="nav_home">Home</a>
+                <a href="#activity" data-key="nav_activity">Activity</a>
+                <a href="#about" data-key="nav_about">About</a>
+                <a href="#projects" data-key="nav_projects">Projects</a>
+                <a href="#support" class="btn-primary" data-key="nav_support">Support Us</a>
+                <button id="langBtn" class="lang-toggle" title="Toggle language">
+                    <i class="fas fa-globe"></i>
+                    <span id="lang-label">ENG</span>
+                </button>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+            <a href="#home" data-key="nav_home">Home</a>
+            <a href="#activity" data-key="nav_activity">Activity</a>
+            <a href="#about" data-key="nav_about">About</a>
+            <a href="#support" data-key="nav_support">Support Us</a>
+            <button id="mobile-lang" class="mobile-lang-btn">Switch to Malayalam</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1534330207526-9e4e3b7754f4?q=80&w=2070&auto=format&fit=crop">
+            <source src="vd.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay"></div>
+
+        <div class="content reveal active">
+            <h1 data-key="hero_title">
+                PALAKKAD ALZHEIMER'S CHARITABLE TRUST<br>Karunya Gereitric Care Centre
+            </h1>
+            <div class="hero-divider"></div>
+            <p class="lead">
+                <i class="fas fa-quote-left accent mr-8"></i>
+                <span data-key="hero_quote">Service to mankind is service to God.</span>
+                <i class="fas fa-quote-right accent ml-8"></i>
+            </p>
+
+            <div class="hero-cta">
+                <a class="btn outline" href="#about" data-key="btn_learn_more">Learn More</a>
+                <a class="btn filled" href="#support" data-key="btn_donate">Donate Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENT EVENTS -->
+    <section id="activity">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2 data-key="section_events_title">Recent Events</h2>
+                <p class="muted-text" data-key="section_events_desc">
+                    Joyful moments and community gatherings at our home.
+                </p>
+            </div>
+
+            <div class="grid three-col-grid" id="recent-events-grid">
+                <!-- Latest events will be injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-bg">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="project-subtitle" data-key="section_project_subtitle">Our Initiatives</span>
+                <h2 data-key="section_project_title" class="project-heading">Karunya Medical Centre</h2>
+            </div>
+
+            <div class="glass reveal project-glass">
+                <div class="project-grid project-grid-row">
+                    <div class="project-left">
+                        <div class="project-media">
+                            <img src="images/kmc/1.jpg"
+                                 alt="Medical Centre"
+                                 class="project-media-img img-shadow">
+                        </div>
+                    </div>
+
+                    <div class="project-right">
+                        <h3 data-key="project_card_title" class="project-title-color">
+                            Karunya Medical Centre
+                        </h3>
+                        <p class="muted-text" data-key="project_desc">
+                            Karunya Medical Centre, started in July 2024, supports the palliative care needs of our residents and nearby community. We focus on comfort, dignity and a peaceful environment rather than intensive hospital treatment.
+                        </p>
+
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <i class="fas fa-check-circle accent"></i>
+                                <span data-key="project_feat_1">
+                                    Comfortable, home-like atmosphere for palliative care.
+                                </span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check-circle accent"></i>
+                                <span data-key="project_feat_2">
+                                    Emotional and practical support for residents and families.
+                                </span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check-circle accent"></i>
+                                <span data-key="project_feat_3">
+                                    Ambulance and doctor visits arranged on a need basis.
+                                </span>
+                            </li>
+                        </ul>
+
+                        <p class="muted-text project-coordinator">
+                            Coordinator:U Mohandas (Phone: +91 8606071951)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-bg">
+        <div class="container about-container-flex">
+            <div class="about-left">
+                <h2 data-key="about_title">About Karunya</h2>
+                <p class="muted-text" data-key="about_p1">
+                    Established in 2005, Karunya Old Age Home has been a sanctuary for the destitute and the elderly who have nowhere else to go. We believe that every silver-haired individual deserves a sunset filled with dignity, love, and care.
+                </p>
+                <p class="muted-text" data-key="about_p2">
+                    Our home provides food, shelter, medical care, and most importantly, a family-like atmosphere. We are run by a dedicated trust and supported by the kindness of people like you.
+                </p>
+                <a class="btn filled about-more-btn" href="about.html" data-key="btn_more_about">
+                    More About Us
+                </a>
+            </div>
+
+            <div class="about-right">
+                <!-- Single image as requested -->
+                <img src="images/index-pic.jpg"
+                     alt="Karunya residents"
+                     class="about-img-large img-shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION MAP (above Support section) -->
+    <section id="location-map" class="location-map-section">
+        <div class="container">
+            <div class="map-wrapper">
+                <iframe
+                    title="Karunya Old Age Home Location"
+                    src="https://www.google.com/maps?q=Karunya+Old+Age+Home+Palakkad&output=embed"
+                    width="100%"
+                    height="320"
+                    style="border:0;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUPPORT / DONATE -->
+    <section id="support" class="support-section">
+        <div class="support-bg"></div>
+        <div class="container support-container">
+            <h2 data-key="donate_title">Your Support Matters</h2>
+            <p class="muted-light" data-key="donate_desc">
+                Help us keep the smiles on their faces. Even a small contribution can provide a meal or medicine for an elderly resident.
+            </p>
+            <p>
+                All donations to Palakkad Alzheimer’s Charitable Trust are exempted from payment of income Tax u/s 80G as per IT Commissioner Trichur, Certificate No. CIT- TCR/TECH/80G-36/2009-10.PAN No.AAAT-TT-4904E.
+            </p>
+
+            <div class="support-grid">
+                <!-- BANK TRANSFER CARD -->
+                <article class="support-card support-card--bank">
+                    <div class="support-card-inner">
+                        <div class="support-card-main">
+                            <div class="support-icon-circle">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h3 data-key="bank_transfer">Bank Transfer</h3>
+                            <p class="support-tag">
+                                Ideal for planned / larger contributions
+                            </p>
+
+                            <p class="support-note">
+                                You can make a direct bank transfer using the details below.  
+                                This is suitable for one-time or recurring donations.
+                            </p>
+                        </div>
+
+                        <div class="support-card-detail">
+                            <div class="bank-details">
+                                <p><strong class="bank-label">Name:</strong> <span class="bank-value">THE PALAKKAD ALZHEIMERS CHARITABLE TRUST</span></p>
+                                <p><strong class="bank-label">Ac No:</strong> <span class="bank-value">339602010008103</span></p>
+                                <p><strong class="bank-label">IFSC:</strong> <span class="bank-value">UBIN0533963</span></p>
+                                <p><strong class="bank-label">Bank:</strong> <span class="bank-value">UBI, CHANDRANAGAR</span></p>
+                            </div>
+
+                            <ul class="support-steps">
+                                <li>1. Add the above account as beneficiary in your bank app.</li>
+                                <li>2. Transfer the amount you wish to contribute.</li>
+                                <li>3. Optionally share transaction details with our team.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- UPI / GPAY CARD -->
+                <article class="support-card support-card--upi">
+                    <div class="support-card-inner">
+                        <div class="support-card-main">
+                            <div class="support-icon-circle">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <h3>UPI / GPay</h3>
+                            <p class="support-tag support-tag--accent">
+                                Fastest way to support
+                            </p>
+
+                            <p class="support-note" data-key="scan_pay">
+                                Scan to pay instantly
+                            </p>
+                            <p class="upi-id-label">UPI ID</p>
+                            <p class="upi-id">qr919447408252-8103@unionbankofinida</p>
+                        </div>
+
+                        <div class="support-card-detail support-card-detail--upi">
+                            <div class="qr-box">
+                                <img src="images/qr-placeholder.jpg"
+                                     alt="UPI QR"
+                                     class="qr-img">
+                            </div>
+                            <ul class="support-steps">
+                                <li>1. Open any UPI app (GPay, PhonePe, Paytm, etc.).</li>
+                                <li>2. Scan the QR code or use the UPI ID.</li>
+                                <li>3. Confirm the name and complete the payment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- CHANGED: button -> anchor linking to donation.html -->
+            <a href="donation.html"
+               class="donation-details-btn"
+               data-key="btn_more_donation">
+                View Full Donation Details
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="foot-top">
+                <div>
+                    <h4 class="footer-title">
+                        <i class="fas fa-hands-holding-heart footer-icon"></i>Karunya Gereatric Care Centre</h4>
+                    <p data-key="footer_about">
+                        Providing care, love, and shelter to the elderly since 2005. Registered Charitable Trust No. 123/2005.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title" data-key="footer_links">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Our Projects</a></li>
+                        <li><a href="#support">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title" data-key="footer_contact">Contact</h4>
+                    <ul class="footer-contact">
+                        <li class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Karunya Geriatric Care Centre,<br>Karingarappully,Kodumbu,Palakkad, Kerala - 678551</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Office: +91 4912968252</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Madusudhan P(Managing Trustee): +91 9447408252, +91 8281986252</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>madhu37@gmail.com<br>karunyapact@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title" data-key="footer_social">Follow Us</h4>
+                    <!-- Vertical social links -->
+                    <div class="social">
+                        <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legal">&copy; 2023 Karunya Geriatric Care Centre. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="js/index.js" defer></script>
+</body>
+</html>
